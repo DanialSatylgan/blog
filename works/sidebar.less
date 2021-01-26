@@ -1,0 +1,80 @@
+// main: works.less
+
+.sidebar {
+    width: 100%;
+    max-width: 300px;
+
+    height: 100vh;
+
+
+    background-color: #202020;
+
+    box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
+
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    
+
+
+
+    &__content {
+        text-align: center;
+        margin-top: -70px;
+
+
+        h3 {
+            font-family: Roboto;
+            font-weight: @r;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        p.sidebar__sub-title {
+            font-family: Roboto;
+            font-weight: @l;
+            font-size: 14px;
+            color: #DEDEDE;
+            opacity: 0.6;
+        }
+
+        p.sidebar__text {
+            .text(#fff; 12px);
+            max-width: 255px;
+            opacity: .8;
+
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+    }
+
+    &__btns {
+        width: 100%;
+        max-width: 260px;
+
+        display: flex;
+        justify-content: space-between;
+
+        margin: 0 auto;
+        margin-top: 60px;
+
+        a:first-child {
+            .btn(@red);
+        }
+
+        a:last-child {
+            .btn(@blue);
+        }
+    }
+
+    &__social {
+        width: 100%;
+        max-width: 105px;
+
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,120 @@
+// main: ../style.less
+
+.contact {
+    width: 100%;
+    max-width: 340px;
+    padding: 50px 70px;
+    background: #202020;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    margin: 0 auto;
+
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .5s;
+
+    z-index: 100;
+
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        margin-top: 20px;
+        margin-right: 20px;
+
+        cursor: pointer;
+    }
+
+
+    form {
+        width: 100%;
+        max-width: 340px;
+        height: 185px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        input {
+            width: 100%;
+            height: 5px;
+
+            background: none;
+            border: none;
+            border-bottom: 1px solid #3F3F3F;
+            outline: none;
+
+            padding: 10px 0px;
+
+            transition: .2s;
+
+            
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #FFFFFF;
+
+            &:focus {
+                border-bottom: 1px solid #107EFF;
+            }
+
+            &::placeholder {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+
+                color: rgba(255, 255, 255, 0.2);
+
+            }
+
+            &.contact__btn {
+                width: 90px;
+                height: 30px;
+                
+                cursor: pointer;
+
+                display: inline-block;
+                padding: 8px 15px;
+
+                background: #3137C9;
+                box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+                border-radius: 5px;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: #FFFFFF;
+
+                transition: .2s;
+
+                &:hover {
+                    box-shadow: 0px 0px 10px @blue;
+                }
+            }
+
+        }
+    }
+
+    &.active {
+        top: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+}

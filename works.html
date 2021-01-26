@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="works/works.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>blog</title>
+</head>
+<body>
+    <div class="sidebar" data-blur>
+        <img src="img/sidebar-1.jpg" alt="">
+
+        <div class="sidebar__content">
+            <img src="img/sidebar-2.png" alt="">
+            <h3>Дмитрий Валак</h3>
+            <p class="sidebar__sub-title">блог front-end разработчика</p>
+
+            <div class="sidebar__social">
+                <img src="img/sidebar-3.png" alt="">
+                <img src="img/sidebar-4.svg" alt="">
+                <img src="img/sidebar-5.svg" alt="">
+            </div>
+
+            <p class="sidebar__text">Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</p>
+            
+            <div class="sidebar__btns">
+                <a href="works.html">Мои работы</a>
+                <a href="" class="sidebar__popup">Написать мне</a>
+            </div>
+
+        </div> <!-- sidebar__content -->
+    </div> <!-- sidebar  -->
+
+    <div class="header" data-blur>
+        <nav>
+            <div class="sidebar__btn">
+                <span></span>
+            </div>
+            <ul class="header__left">
+                <li><a href="/">Главная</a></li>
+                <li><a href="" class="header__has-list">Статьи</a> 
+                 <ul class="header__list">
+                     <li><a href="" class="header__list-item">Создание сайтов</a></li>
+                     <li><a href="" class="header__list-item">Интернет-маркетинг</a></li>
+                     <li><a href="" class="header__list-item">Продвижение видео</a></li>
+                 </ul>
+                </li>
+                <li><a href="">Обо мне</a></li>
+                <li><a href="">Реклама</a></li>
+            </ul>
+ 
+            <div class="header__right">
+                <a href="">Профиль</a>
+                <input type="text" placeholder="Поиск по блогу">
+            </div>
+        </nav>
+    </div> <!-- header -->
+
+    <div class="container" data-blur>
+        <div class="works">
+            <h2>Мои работы</h2>
+
+            <div class="works__item">
+                <img src="img/works-1.jpg" alt="">
+                <div class="works__content">
+                    <h3>altermono.com</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                    <div class="works__tags">
+                        <p>дизайн</p>
+                        <p>создание сайта</p>
+                        <p>SMM</p>
+                    </div>
+                    <a href="">Перейти на сайт</a>
+                </div>
+            </div>
+
+            <div class="works__item">
+                <img src="img/works-2.jpg" alt="">
+                <div class="works__content">
+                    <h3>altermono.com</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+                    <div class="works__tags">
+                        <p>дизайн</p>
+                        <p>создание сайта</p>
+                        <p>SMM</p>
+                    </div>
+                    <a href="">Перейти на сайт</a>
+                </div>
+            </div>
+
+        </div> <!-- works -->
+    </div> <!-- container -->
+
+    <div class="menu" data-blur>
+        <img src="img/cancel.svg" alt="" class="close">
+        <img src="img/menu-1.jpg" alt="" class="menu__header">
+        <div class="menu__ava">
+            <img src="img/menu-2.png" alt="">
+            <h3>Дмитрий Валак</h3>
+        </div>
+
+        <ul>
+            <li ><a href="/" class="menu__toggle">Статьи</a>
+                <ul class="menu__list">
+                    <li>Создание сайтов</li>
+                    <li>Интернет-маркетинг</li>
+                    <li>Продвижение видео</li>
+                </ul>
+            </li>
+            <li><a href="profile.html">Обо мне</a></li>
+            <li><a href="" class="sidebar__popup">Реклама</a></li>
+            <li><a href="works.html">Профиль</a></li>
+        </ul>
+
+        <div class="menu__btns">
+            <a href="works.html" class="red">Мои работы</a>
+            <a href="" class="blue sidebar__popup">Написать мне</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <img src="img/cancel.svg" alt="" class="close">
+        <form action="">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Емайл">
+            <input type="text" placeholder="Текст сообщения">
+            <input type="submit" class="contact__btn">
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
